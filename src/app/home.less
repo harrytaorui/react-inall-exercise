@@ -1,3 +1,53 @@
+@img-width: 950px;
+@img-height: 480px;
 .home {
-  color: if((true), red, yellow);
+  // color: if((true), red, yellow);
+  width: @img-width;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+}
+
+.home-title {
+  background: url("../images/hero-image.png");
+  height: @img-height;
+  width: 100%;
+}
+
+.home p {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  text-align: center;
+  line-height: @img-height;
+  margin: 0;
+}
+
+.home-nav {
+  background-color: #CACCCD;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.home-nav-item {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 50px;
+}
+
+.home-nav-item img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.home-nav-item-link {
+  color: #fff;
+  font-size: 20px;
 }
